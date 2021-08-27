@@ -1,0 +1,327 @@
+@font-face {
+  font-family: 'muse-500';
+  src: url("../fonts/museosans-500.otf"); }
+@font-face {
+  font-family: 'muse-300';
+  src: url("../fonts/museosansrounded-300-webfont.ttf"), url("../fonts/museosansrounded-300-webfont.woff"), url("../fonts/museosansrounded-300-webfont.svg"); }
+@font-face {
+  font-family: 'OpenSeans';
+  src: url("/fonts/OpenSans-Regular.ttf"); }
+@font-face {
+  font-family: 'OpenSeans-Semibold';
+  src: url("../fonts/OpenSans-SemiBold.ttf"); }
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+html {
+  background-color: #ffffff;
+  overflow-x: hidden; }
+
+body {
+  background-color: #ffffff;
+  color: #5a6175;
+  overflow-x: hidden; }
+
+p, ul, ol {
+  margin-bottom: 0.5rem; }
+
+a {
+  text-decoration: none; }
+
+a:hover {
+  text-decoration: none; }
+
+sup {
+  font-size: xx-small;
+  vertical-align: super; }
+
+p.a, h5.a {
+  font-weight: bold;
+  transition: all 0.2s ease-out; }
+
+h1, h2, h3, h4, h5 {
+  line-height: 1.5;
+  margin-bottom: 1.5em; }
+
+h1 {
+  font-size: 28px;
+  font-family: "muse-300"; }
+
+h2 {
+  font-size: 26px;
+  font-family: "muse-300"; }
+
+h3 {
+  font-size: 21px;
+  font-family: "muse-300"; }
+
+h4 {
+  font-size: 18px;
+  font-family: "muse-300"; }
+
+h5 {
+  font-size: 14px;
+  font-weight: bold; }
+
+.btn-custom {
+  color: #ffffff;
+  background-color: #61c0bd;
+  font-size: 18px;
+  font-family: "muse-500";
+  transition: 0.3s all ease-out; }
+
+.btn-custom:hover {
+  box-shadow: 1px 3px 12px 0px #b3b3b3;
+  color: #ffffff; }
+
+#navbar {
+  padding: 15px 25px;
+  border: none;
+  background-color: #ffffff;
+  transition: padding-top 0.3s, padding-bottom 0.3s; }
+  #navbar .navbar-toggler {
+    background: #61c0bd;
+    border: none; }
+  #navbar .navbar-nav .nav-item .nav.nav-link {
+    color: #000000;
+    font-weight: 400;
+    font-size: 14px;
+    font-family: "muse-500";
+    transition: all 0.3s ease-out; }
+  #navbar .navbar-nav .nav-item .nav-link.active,
+  #navbar .navbar-nav .nav-item .nav-link:hover {
+    background: #61c0bd;
+    color: #ffffff !important;
+    transition: all 0.5s ease-out; }
+
+#header {
+  overflow-x: hidden; }
+  #header #header-container {
+    padding: 50px;
+    background: url("../img/header.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; }
+    #header #header-container .text-container {
+      margin-top: 100px; }
+      #header #header-container .text-container h1, #header #header-container .text-container h4 {
+        color: #ffffff;
+        line-height: 1.5em; }
+      #header #header-container .text-container h1 {
+        font-family: "muse-300"; }
+      #header #header-container .text-container h4 {
+        font-family: "OpenSeans"; }
+  #header #footer-container {
+    background-color: #f2f2f2;
+    padding: 30px;
+    border-bottom: 1px solid #e6e6e6; }
+    #header #footer-container button {
+      color: #ffffff;
+      background-color: #61c0bd;
+      font-size: 20px;
+      font-family: "muse-500";
+      float: right;
+      margin: 0 0 10px 10px; }
+    #header #footer-container .event-details {
+      font-family: "muse-500";
+      font-size: 18px;
+      color: #565659; }
+      #header #footer-container .event-details a {
+        font-family: "OpenSeans-Semibold";
+        font-size: 16px; }
+    #header #footer-container p {
+      color: #5a6175;
+      font-family: "OpenSeans"; }
+
+/**********************GET INVOLVED*****************************/
+#get-involved {
+  padding: 50px 0; }
+  #get-involved .container h3 {
+    font-family: "muse-500";
+    margin-bottom: 50px; }
+  #get-involved .container .row .col-md-4 img {
+    height: 150px;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 30px; }
+  #get-involved .container .row .col-md-4 h4 {
+    font-family: "muse-500";
+    margin-bottom: 15px; }
+  #get-involved .container .row .col-md-4 p {
+    font-family: "OpenSeans";
+    line-height: 1.5; }
+  #get-involved .container .row .col-md-4 a {
+    margin-top: 10px; }
+
+#mission {
+  background-color: #f2f2f2;
+  padding: 50px 0;
+  border-top: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6;
+  opacity: 0;
+  transition: all 0.7s ease-out; }
+  #mission .container h3, #mission .container h4 {
+    font-family: "muse-500"; }
+  #mission .container h5 {
+    font-family: "OpenSeans"; }
+  #mission .container .row .col-md-4 .card {
+    border: none;
+    border-radius: 5px;
+    margin-top: 50px; }
+    #mission .container .row .col-md-4 .card .icon-container {
+      border-radius: 50%;
+      margin: 0 auto;
+      margin-top: -45px;
+      border: 8px solid #ffffff;
+      background: #61c0bd;
+      width: 100px; }
+      #mission .container .row .col-md-4 .card .icon-container img {
+        padding: 16px;
+        width: 75px;
+        height: 70px; }
+    #mission .container .row .col-md-4 .card .card-body .card-title {
+      color: #61c0bd;
+      margin: 15px;
+      font-family: "muse-300"; }
+    #mission .container .row .col-md-4 .card .card-body .card-text {
+      font-family: "OpenSeans"; }
+
+#members {
+  padding: 50px 50px 0 50px; }
+  #members .container h3 {
+    font-family: "muse-300";
+    margin-bottom: 60px; }
+  #members .container #members-slider img {
+    height: 50px;
+    width: 120px;
+    margin: 0 auto; }
+  #members .container #members-slider img:hover {
+    transform: scale(1.1);
+    transition: all 0.5s ease-out; }
+  #members .container .owl-carousel .owl-dots.disabled {
+    display: inline-block;
+    margin-top: 50px; }
+  #members .container .owl-theme.owl-dots .owl-dot.active span,
+  #members .container .owl-theme.owl-dots .owl-dot:hover span {
+    background: #61c0bd !important; }
+  #members .container .owl-theme.owl-dots .owl-dot:hover span {
+    background: #5a6175 !important; }
+
+#events {
+  padding: 50px 0;
+  font-family: "muse-500"; }
+  #events .container .row .col-md-4 .card a img {
+    opacity: 0.7;
+    height: 200px; }
+  #events .container .row .col-md-4 .card a img:hover {
+    opacity: 1;
+    transition: all 0.7s ease-out; }
+  #events .container .row .col-md-4 .card .card-text {
+    line-height: 1.3; }
+
+#blogs {
+  padding: 0 0 50px 0; }
+  #blogs h3 {
+    font-family: "muse-500";
+    color: #5a6175;
+    margin: 50px 0; }
+  #blogs #blog-slider .item a h4 {
+    font-family: "OpenSeans-Semibold";
+    color: #61c0bd;
+    border-bottom: 1px solid #f2f2f2; }
+  #blogs #blog-slider .item a .main-p {
+    font-family: "OpenSeans";
+    color: #5a6175;
+    line-height: 1.5;
+    border-bottom: 1px solid #f2f2f2; }
+  #blogs #blog-slider .item a p {
+    color: #5a6175; }
+  #blogs .owl-nav {
+    display: inline-block;
+    position: relative;
+    left: 48%;
+    margin-top: 20px; }
+  #blogs .owl-prev {
+    font-size: 30px;
+    color: #61c0bd;
+    margin-right: 25px; }
+  #blogs .owl-next {
+    font-size: 30px;
+    color: #61c0bd; }
+
+#contact {
+  padding: 50px 0; }
+  #contact label {
+    margin-bottom: 10px;
+    font-family: "OpenSeans"; }
+
+footer {
+  padding: 20px;
+  background-color: #61c0bd; }
+  footer .container-fluid .social {
+    margin-bottom: 10px; }
+    footer .container-fluid .social a {
+      color: #ffffff;
+      font-size: 15px;
+      margin-left: 20px; }
+  footer .container-fluid .copyright-area p {
+    color: #000000;
+    font-size: 20px; }
+    footer .container-fluid .copyright-area p a {
+      color: #ffffff;
+      text-decoration: none; }
+
+@media only screen and (max-width: 414px) {
+  #header #footer-container p {
+    letter-spacing: 1px;
+    line-height: 1.2; }
+
+  #get-involved .container .row .col-md-4 a {
+    margin-bottom: 30px; }
+
+  #event .container .row .col-md-4 .card {
+    margin-bottom: 35px; }
+
+  #event {
+    padding-bottom: 0; }
+
+  #blog {
+    padding-bottom: 0; }
+
+  #mission {
+    opacity: 0; } }
+
+/*# sourceMappingURL=main.css.map */
