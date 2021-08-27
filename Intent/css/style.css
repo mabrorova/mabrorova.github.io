@@ -1,0 +1,377 @@
+*,
+ul,
+p,
+a {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    color: inherit;
+    list-style: none;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+    color: inherit;
+}
+*::before,*::after{
+    font-family: 'icons';
+}
+/* icons fonts */
+
+@font-face {
+    font-family: "icons";
+    font-style: normal;
+    font-weight: 900;
+    font-display: auto;
+    src: url(../icons/fa-solid-900.eot);
+    src: url(../icons/fa-solid-900.eot?#iefix) format("embedded-opentype"), url(../icons/fa-solid-900.woff2) format("woff2"), url(../icons/fa-solid-900.woff) format("woff"), url(../icons/fa-solid-900.ttf) format("truetype"), url(../icons/fa-solid-900.svg#fontawesome) format("svg")
+}
+
+@font-face {
+    font-family: "icons";
+    font-style: normal;
+    font-weight: 300;
+    font-display: auto;
+    src: url(../icons/fa-light-300.eot);
+    src: url(../icons/fa-light-300.eot?#iefix) format("embedded-opentype"), url(../icons/fa-light-300.woff2) format("woff2"), url(../icons/fa-light-300.woff) format("woff"), url(../icons/fa-light-300.ttf) format("truetype"), url(../icons/fa-light-300.svg#fontawesome) format("svg")
+}
+
+@font-face {
+    font-family: "icons";
+    font-style: normal;
+    font-weight: normal;
+    font-display: auto;
+    src: url(../icons/fa-brands-400.eot);
+    src: url(../icons/fa-brands-400.eot?#iefix) format("embedded-opentype"), url(../icons/fa-brands-400.woff2) format("woff2"), url(../icons/fa-brands-400.woff) format("woff"), url(../icons/fa-brands-400.ttf) format("truetype"), url(../icons/fa-brands-400.svg#fontawesome) format("svg")
+}
+
+@font-face {
+    font-family: "icons";
+    font-style: normal;
+    font-weight: 900;
+    font-display: auto;
+    src: url(../icons/fa-duotone-900.eot);
+    src: url(../icons/fa-duotone-900.eot?#iefix) format("embedded-opentype"), url(../icons/fa-duotone-900.woff2) format("woff2"), url(../icons/fa-duotone-900.woff) format("woff"), url(../icons/fa-duotone-900.ttf) format("truetype"), url(../icons/fa-duotone-900.svg#fontawesome) format("svg")
+}
+
+
+/* icons end */
+
+/* fonts template */
+@font-face{
+    font-family: 'helvetica';
+    src: url(../fonts/helvetica/9202.otf);
+}
+@font-face{
+    font-family: 'bitter-bold';
+    src: url(../fonts/bitter/Bitterbold.ttf);
+    font-weight: 700;
+}
+@font-face{
+    font-family: 'bitter-regular';
+    src: url(../fonts/bitter/Bitter.ttf);
+    font-family: 400;
+}
+/* fonts template end*/
+
+.header__social-t::before{
+    content: '\f099';
+}
+.header__social-f::before{
+    content: '\f39e';
+}
+.header__social-d::before{
+    content: '\f17d';
+}
+.header__social-r::before{
+    content: '\f09e';
+    font-weight: 300;
+}
+
+.header{
+    /* max-height: 100vh;
+     */
+}
+.header__pre-nav{
+    background: url(../images/bag-pre-nav.jpg);
+    padding: 15px 0;
+}
+.header__social-link{
+    color: white;
+    margin-left: 20px;
+    font-size: 16px;
+}
+.header__social-link:hover{
+    color: gray;
+}
+.header__nav{
+    padding: 10px 0;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    color: #252525;
+    font-family: 'bitter-regular';
+}
+.logo__image{
+    height: 35px;
+    width: 35px;
+    margin-right: 10px;
+}
+.logo__dot{
+    color: #ea5a4b;
+    font-size: 24px;
+}
+.header__nav-link{
+    margin-left: 30px;
+    font-family: 'helvetica';
+    font-weight: 300;
+    text-transform: uppercase;
+    transition: 300ms;
+}
+.header__nav-link:hover{
+    color: #ea5a4b;
+}
+.header__slide-text{
+    background: rgba(0, 0, 0, 0.75);
+    padding: 10px 60px 10px 10px;
+    margin-bottom: 1px;
+    font-size: 24px;
+}
+.header__slide-btn{
+    background: #ea5a4b;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: white;
+    top: 50%;
+    left: 50%;
+    z-index: 999;
+}
+.header__slide-btn:hover{
+    background: #252525;
+    color: white;
+}
+.header__slide-btn_p::before{
+    content: '\f104';
+    font-weight: 100;
+}
+.header__slide-btn_n::before{
+    content: '\f104';
+    font-weight: 100;
+    transform: rotate(180deg);
+}
+.header__slide-btns{
+    position: absolute;
+    width: 100%;
+    max-width: 1110px;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    left: 50%;
+    transform: translateX(-50%) translateY(5%);
+    top: 0;
+    right: 15%;
+    z-index: 999;
+}
+.header__slide-indicators{
+    margin: 0;
+    background: url(../images/bag-pre-nav.jpg);
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 999;
+    padding: 30px 15px;
+    max-width: max-content;
+    margin: 0 auto;
+    margin-top: -30px;
+}
+.header__slide-indicators .header__slide-indicators__item{
+    margin: 0;
+    padding: 0;
+    width: 74px;
+    height: 74px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    border: 2px solid transparent;
+    margin: 0 15px ;
+
+}
+.header__slide-indicators .header__slide-indicators__item.active{
+    opacity: 1;
+    border: 2px solid #ea5a4b;
+}
+/* HOME SECTION */
+
+.home {
+    /* position: absolute;
+    bottom: -50px;
+    left: 100px;
+    background-color: var(--w); */
+  }
+  .header-slider{
+    position: relative;
+    justify-content: center;
+    display: flex;
+  }
+  .header-slider .slider-liner{
+    width: 100%;
+  }
+  
+  .header-slider .slider-item{
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  .header-slider .slider-content{
+    position: absolute;
+    width: 100%;
+  }
+  .header-slider img{
+    width: 100%;
+  }
+  .carousel__pictures {
+    background-color: var(--dark);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 27px;
+    position: absolute;
+    top: 100%;
+    transform: translateY(-18px);
+  }
+  .carousel__pictures img {
+    margin: 0px 13px;
+  }
+  
+  .menu_item {
+    margin: 71px 27px;
+  }
+  
+  .menu_item .menu_item-title {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 17px;
+  }
+  .menu_item-title h2 {
+    color: var(--dark);
+    font-family: var(--Bitter);
+    font-size: 18px;
+    font-weight: 400;
+  }
+  
+  .menu_item-text {
+    color: var(--grey);
+    font-family: var(--helveticaneue);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+  }
+  
+  .menu_item .icon_bg {
+    width: 31px;
+    height: 31px;
+    background-color: var(--dark);
+    padding: 7px;
+    margin-right: 16px;
+  }
+  .menu_item-footer {
+    width: 313px;
+    height: 20px;
+    color: var(--w);
+    font-family: var(--Bitter);
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--dark);
+    margin: 30px 0;
+  }
+  
+  .menu_item-footer span {
+    padding: 5px 5px;
+    width: 127px;
+    height: 38px;
+    background-color: var(--orange);
+    color: var(--w);
+    font-family: var(--Bitter-Bold);
+    font-weight: 700;
+  }
+  
+  .home a {
+    padding: 10px 8px;
+    margin-bottom: 33px;
+  }
+  .home a:hover {
+    background-color: var(--orange);
+    color: var(--w);
+  }
+  .content_img img {
+    padding: 18px 10px;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+  
+  /* Footer */
+  
+  footer {
+    border-top: 8px solid var(--orange);
+    background: var(--dark);
+    padding: 70px 50px;
+  }
+  
+  .footer_items {
+    display: flex;
+    justify-content: center;
+  }
+  
+  footer .footer-posts h3 {
+    color: var(--w);
+    font-family: var(--helveticaneue);
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 20px 0;
+  }
+  footer .footer-posts p {
+    color: var(--light-grey);
+    font-family: var(--Bitter);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 18px;
+    padding: 20px 0;
+    border-bottom: 1px solid #3b3b3b;
+  }
+  footer .footer-intent p {
+    color: var(--light-grey);
+    font-family: var(--helveticaneue);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 18px;
+    margin-bottom: 26px;
+  }
+  .footer-intent h3 {
+    color: var(--w);
+    font-family: var(--helveticaneue);
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 20px 0;
+  }
+  .footer-social_media h3 {
+    color: var(--w);
+    font-family: var(--helveticaneue);
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 20px 0;
+  }
+  
+
